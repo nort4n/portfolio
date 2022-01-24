@@ -1,0 +1,117 @@
+/*-------------------------------------------*
+/* all
+/*-------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+p {
+  text-align: left;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*-------------------------------------------*
+/* header
+/*-------------------------------------------*/
+
+.header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+}
+
+/*-------------------------------------------*
+/* body
+/*-------------------------------------------*/
+
+.body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 15px;
+  background: #ffffff;
+}
+
+.leftcolumn {
+  float: left;
+  width: 50%;
+  align-content: center;
+}
+
+.rightcolumn {
+  display: box;
+  float: right;
+  width: 25%;
+  padding-left: 50px;
+  align-content: center;
+  text-align: center;
+}
+
+.blogtitle {
+  margin-bottom: 0.6rem;
+}
+
+.blog-st {
+  margin-bottom: 0.6rem;
+}
+
+.image {
+  background-color: white;
+  width: 100%;
+  align-content: center;
+  border-radius: 5px;
+  /*border: 1px solid black;*/
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin-top: 10px;
+  padding: 1rem;
+  /* border: 1px solid black;*/
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------------------------------------*
+/* footer
+/*-------------------------------------------*/
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+}
