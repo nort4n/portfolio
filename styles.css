@@ -3,8 +3,12 @@
 /*-------------------------------------------*/
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+}
+
+body {
+  overscroll-behavior: none;
 }
 
 a {
@@ -28,17 +32,57 @@ p {
     padding: 0;
   }
 }
+.wrapperall{
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* background: radial-gradient(49.86% 53.9% at 56.79% 50.14%, rgba(253, 0, 0, 0.8) 0%, rgba(11, 93, 253, 0.304) 100%), #C4C4C4; */
+  margin: 0;
+  padding: 0;
+}
 
+}
 /*-------------------------------------------*
 /* header
 /*-------------------------------------------*/
+
+.static {     
+  width:0;
+  /*z-index:2;*/
+  height:0;
+  position:;
+}
 
 .header {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 1rem;
   font-size: 20px;
   text-align: center;
-  background: white;
+  background: radial-gradient(49.86% 53.9% at 56.79% 50.14%, rgba(253, 0, 0, 0.8) 0%, rgba(11, 93, 253, 0.304) 100%), #C4C4C4;
+  
+}
+
+.menu {
+  display: flex;
+  position: sticky;
+  top: 0;
+  margin: 1rem;
+  padding: 0;
+  background-color:;
+}
+
+.menulist {
+list-style: none;
+padding-top: 1rem;
+justify-content: space-between; 
+background-color: ;
+}
+.menuitem {
+  display: inline;
+  font-weight: bold;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  background-color: ;
 }
 
 /*-------------------------------------------*
@@ -47,9 +91,29 @@ p {
 
 .body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 15px;
-  background: #ffffff;
+  padding: 0;
+  
 }
+
+.aboutbox {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.aboutpic {
+  max-height: 400px;
+  max-width: auto;
+  margin: 1rem;
+  border-radius: 5px;
+}
+.abouttext {
+  justify-content: center;
+  width: 20%;
+  justify-self: right;  
+  margin: 1rem;
+}
+
+
 
 .leftcolumn {
   float: left;
@@ -100,7 +164,7 @@ p {
 }
 
 .card:hover {
- /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
+ box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
